@@ -37,6 +37,14 @@ final class ClassAliasLoader
     }
 
     /**
+     * @param bool $caseSensitiveClassLoading
+     */
+    public function setCaseSensitiveClassLoading($caseSensitiveClassLoading)
+    {
+        $this->caseSensitiveClassLoading = $caseSensitiveClassLoading;
+    }
+
+    /**
      * Adds an alias map and merges it with already available map
      */
     public function addAliasMap(array $aliasMap): void
